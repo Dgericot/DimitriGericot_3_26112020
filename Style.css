@@ -7,15 +7,89 @@
     font-family: 'Shrikhand', cursive;
 */
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-
+#page {
+    width: auto;
 }
+
+/*header*/
+
+#logo h1 {
+    font-family: 'Shrikhand', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*section 1*/
+
+.container-section1 {
+    background-color: #f2f2f2;
+}
+
+.recherche {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: transparent ;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+figure a {
+    text-decoration: none;
+}
+
+figure span {
+    color: black;
+    font-weight: bold;
+}
+
+figure p {
+    color: black;
+}
+
+.restaurants {
+    flex-direction: column;
+}
+
+.restaurants figure {
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.restau-img {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.restau-img img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+footer h1 {
+    font-family: 'Shrikhand', cursive;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+
 
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
 
-    
+
 }
