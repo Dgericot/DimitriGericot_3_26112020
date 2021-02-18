@@ -37,7 +37,46 @@ body {
 input {
     border: transparent ;
     padding: 0 15px;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+input::placeholder {
+    color: black;
     font-weight: bold;
+}
+
+/***********************/
+
+.explore-restaurants h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.exploration {
+    border: none;
+    background-color: #FF79DA;
+    border-radius: 30px 30px 30px 30px; ;
+    height: 45px;
+    width: 40%;
+}
+
+.exploration span {
+    color: white;
+    font-weight: bold;
+}
+
+/*section 2*/
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.fonctionnement button {
+    border-radius: 30px 30px 30px 30px;
+    height: 50px;
 }
 
 figure a {
@@ -85,11 +124,37 @@ footer ul {
     list-style-type: none;
 }
 
-
-
 }
 
+/*
 @media (min-width: 768px) and (max-width: 1024px){
 
 
+}*/
+
+/*Desktop*/
+
+#page {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 2em;
+}
+
+.restaurants {
+    flex-direction: row;
+}
+
+.restau-img {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.restau-img img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
