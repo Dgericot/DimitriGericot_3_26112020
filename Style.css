@@ -134,9 +134,9 @@ article {
 }
 
 .restaurants {
-background-color: #f6f6f6;
-padding: 15px 20px 30px;
-margin-top:20px
+    background-color: #f6f6f6;
+    padding: 15px 20px 30px;
+    margin-top:20px
 }
 #cartes {
     display: flex;
@@ -185,10 +185,9 @@ footer li {
 }
 }
 
-/*
+
+/* tablette
 @media (min-width: 768px) and (max-width: 1024px){
-
-
 }*/
 
 /*Desktop*/
@@ -202,24 +201,111 @@ footer li {
     padding: 0 2em;
 }
 
+#logo h1 {
+    font-family: 'Shrikhand', cursive;
+    display: flex;
+    justify-content: center;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.recherche {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding: 15px;
+}
+input {
+    border: transparent ;
+    padding: 0 15px;
+    background-color: #eaeaea;
+    display: flex;
+}
+input::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+.explore-restaurants h1 {
+    width: 100%;
+    text-align: center;
+}
+.explore-restaurants p {
+    width: 100%;
+    text-align: center;
+}
+.explore-restaurants {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    padding: 20px 40px 40px;
+}
+.exploration {
+    border: none;
+    background-color: #b962db;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 3px 14px rgb(0 0 0 / 30%);
+    height: 50px;
+    width: 20%;
+}
+.exploration span {
+    color: white;
+    font-weight: bold;
+}
+/*Les titres fonctionnement et restaurants*/
+.titres {
+    font-size: 1.5em;
+}
+/***********************/
+article a {
+    text-decoration: none;
+}
+article span {
+    color: black;
+    font-weight: bold;
+}
+article p {
+    color: black;
+}
+article img {
+    border-radius: 20px 20px 0px 0px;
+}
+article {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 3px 14px rgb(0 0 0 / 30%);
+    padding-bottom: 5px;
+    margin-right: 20px;
+}
 #cartes {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-
 .restau-img {
     position: relative;
     width: 100%;
-    height: 0;
+    height: 6rem;
     padding-bottom: 56.25%;
     overflow: hidden;
 }
-
 .restau-img img {
     position: absolute;
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+#cartes article {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.fa-heart {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
 }
 
 }
