@@ -1,0 +1,11 @@
+{
+  "name": "dimitrigericot_3_26112020",
+  "version": "1.0.0",
+  "description": "Projet3-OC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "Dimitri",
+  "license": "ISC"
+}
