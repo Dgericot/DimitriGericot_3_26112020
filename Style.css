@@ -24,7 +24,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*section 1*/
+/*section container-section1*/
 
 .container-section1 {
     background-color: #f2f2f2;
@@ -33,53 +33,91 @@ body {
 .recherche {
     display: flex;
     justify-content: center;
+    background-color: #eaeaea;
+    padding: 15px;
 }
-
 input {
     border: transparent ;
     padding: 0 15px;
-    background-color: #f2f2f2;
+    background-color: #eaeaea;
     display: flex;
 }
-
 input::placeholder {
     color: black;
     font-weight: bold;
 }
 
+/*Les titres fonctionnement et restaurants*/
+.titres {
+    font-size: 1.5em;
+}
 /***********************/
 
-.explore-restaurants h1 {
+.explore-restaurants {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    padding: 20px 40px;
 }
-
 .exploration {
     border: none;
-    background-color: #FF79DA;
-    border-radius: 30px 30px 30px 30px; ;
-    height: 45px;
-    width: 40%;
+    background-color: #b962db;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 3px 14px rgb(0 0 0 / 30%);
+    height: 50px;
+    width: 70%;
 }
-
 .exploration span {
     color: white;
     font-weight: bold;
 }
 
-/*section 2*/
-
+/*section fonctionnement*/
 .fonctionnement {
     display: flex;
     flex-direction: column;
     padding: 0 18px;
 }
-
 .fonctionnement button {
     border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 3px 14px rgb(0 0 0 / 30%);
     height: 50px;
+    border: none;
+}
+.fonctionnement button:hover {
+    background-color:#b962db ;
+    opacity:0.3;
+}
+.encadrement {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+.encadrement span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#chiffre {
+    display: block;
+    border-radius: 50%;
+    background-color: #b962db;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: -15px;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+.fonctionnement .fas {
+    padding: 0px 20px;
+    font-size: 18px;
+}
+.fonctionnement .fas:hover{
+    color: #b962db;
 }
 
+/*section restaurants*/
 article a {
     text-decoration: none;
 }
