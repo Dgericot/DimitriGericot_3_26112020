@@ -25,11 +25,6 @@ body {
 }
 
 /*section container-section1*/
-
-.container-section1 {
-    background-color: #f2f2f2;
-}
-
 .recherche {
     display: flex;
     justify-content: center;
@@ -58,7 +53,7 @@ input::placeholder {
     justify-content: center;
     flex-wrap: wrap;
     background-color: #f6f6f6;
-    padding: 20px 40px;
+    padding: 20px 40px 40px;
 }
 .exploration {
     border: none;
@@ -121,26 +116,36 @@ input::placeholder {
 article a {
     text-decoration: none;
 }
-
 article span {
     color: black;
     font-weight: bold;
 }
-
 article p {
     color: black;
 }
+article img {
+    border-radius: 20px 20px 0px 0px;
+}
+article {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 3px 14px rgb(0 0 0 / 30%);
+    padding-bottom: 5px;
+}
 
+.restaurants {
+background-color: #f6f6f6;
+padding: 15px 20px 30px;
+margin-top:20px
+}
 #cartes {
     display: flex;
     flex-direction: column;
 }
-
 #cartes article {
     margin: 10px 0;
     box-sizing: border-box;
 }
-
 .restau-img {
     position: relative;
     width: 100%;
@@ -148,22 +153,36 @@ article p {
     padding-bottom: 56.25%;
     overflow: hidden;
 }
-
 .restau-img img {
     position: absolute;
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
-
-footer h1 {
-    font-family: 'Shrikhand', cursive;
+.fa-heart {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
 }
 
+/*footer*/
+.footer-box {
+    background-color: #353535;
+}
+footer h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.3em;
+    color: white;
+}
 footer ul {
     list-style-type: none;
 }
-
+footer li {
+    color: white;
+}
+.footer-box .fas {
+    color: white;
+}
 }
 
 /*
