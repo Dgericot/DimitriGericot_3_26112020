@@ -12,5 +12,34 @@
   overflow: hidden;
 }
 
+.proj-img img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/*section menu*/
+.menu {
+  border-radius: 40px 40px 0px 0px;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu h1 {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+}
+
+#starters span {
+  background-color: white;
+}
+
+.plats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=style.css.map */
