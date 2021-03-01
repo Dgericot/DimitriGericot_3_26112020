@@ -14,10 +14,11 @@
 
 /*header*/
 
-#logo h1 {
+.logo-menu {
     font-family: 'Shrikhand', cursive;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 body {
@@ -178,28 +179,31 @@ article {
 }
 
 /*footer*/
-.footer-box {
+footer {
     background-color: #353535;
+    padding: 10px;
+    padding-left: 30px;
 }
-footer h1 {
+.h1-footer {
     font-family: 'Shrikhand', cursive;
     font-size: 1.3em;
     color: white;
+    font-weight: normal;
 }
-footer ul {
-    list-style-type: none;
+.footer-box a {
+    text-decoration: none;
 }
-footer li {
+.footer-box p {
     color: white;
 }
 .footer-box .fas {
-    color: white;
+    padding-right: 10px;
 }
 
 /*************************************/
 /*Desktop*/
-
-@media (min-width:1200px) and (max-width:2560px) {
+/*@media screen and (min-width:1200px)*/
+@media screen and (min-width:1200px) and (max-width:2560px) {
 
 #page {
     margin: auto;
@@ -238,29 +242,16 @@ footer li {
 }
 
 /*footer*/
-.footer-box {
-    background-color: #353535;
-    margin-top: 25px;
-}
-footer h1 {
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.3em;
-    color: white;
+
+.h1-footer {
     text-align: center;
 }
-footer ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding-right: 35px;
-}
-footer li {
-    color: white;
+.footer-box p {
     padding: 10px;
 }
-.footer-box .fas {
-    color: white;
-    line-height: 2.5;
+.footer-box {
+    display: flex;
+    justify-content: center;
 }
 
 }
