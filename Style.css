@@ -1,6 +1,3 @@
-/*
-@media screen and (max-width: 980px) {*/
-
 
 /*
     font-family: 'Roboto', sans-serif;
@@ -82,6 +79,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     padding: 0 18px;
+    margin-top: 20px;
 }
 .fonctionnement button {
     border-radius: 30px 30px 30px 30px;
@@ -93,8 +91,8 @@ button.encadrement:not(:last-child) {
     margin-bottom: 20px;
 }
 .fonctionnement button:hover {
-    background-color:#b962db ;
-    opacity:0.3;
+    background-color:#9356DC ;
+    opacity:0.2;
 }
 .encadrement {
     display: flex;
@@ -108,7 +106,7 @@ button.encadrement:not(:last-child) {
 #chiffre {
     display: block;
     border-radius: 50%;
-    background-color: #b962db;
+    background-color: #9356DC;
     color: white;
     width: 30px;
     height: 30px;
@@ -121,11 +119,21 @@ button.encadrement:not(:last-child) {
     font-size: 18px;
 }
 .fonctionnement .fas:hover{
-    color: #b962db;
+    color: #9356DC;
+    opacity: 1;
 }
 
 /*section restaurants*/
 /*couleur encadrement nouveau #99e2d0*/
+
+.text-nouveau-box {
+    position: absolute;
+    left: 80%;
+    padding: 10px 30px;
+    background: #99E2D0;
+    color: #008766;
+    font-weight: bold;
+}
 article a {
     text-decoration: none;
 }
@@ -149,7 +157,7 @@ article {
 .restaurants {
     background-color: #f6f6f6;
     padding: 15px 20px 30px;
-    margin-top:20px
+    margin-top:80px
 }
 #cartes {
     display: flex;
@@ -203,7 +211,7 @@ footer {
 /*************************************/
 /*Desktop*/
 /*@media screen and (min-width:1200px)*/
-@media screen and (min-width:1200px) and (max-width:2560px) {
+@media screen and (min-width:1200px) {
 
 #page {
     margin: auto;
@@ -213,7 +221,8 @@ footer {
 /*section fonctionnement*/
 .fonctionnement {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 .fonctionnement button {
     padding: 25px;
