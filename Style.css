@@ -10,7 +10,6 @@
 }
 
 /*header*/
-
 .logo-menu {
     font-family: 'Shrikhand', cursive;
     display: flex;
@@ -140,9 +139,12 @@ article a {
 article span {
     color: black;
     font-weight: bold;
+    font-size: 1.2em;
 }
-article p {
+.txt-img p {
     color: black;
+    margin: 0;
+    font-size: 1.2em;
 }
 article img {
     border-radius: 20px 20px 0px 0px;
@@ -180,10 +182,18 @@ article {
     height: 100%;
     width: 100%;
 }
+.txt-img {
+    margin: 20px 25px 15px 15px;
+}
 .fa-heart {
     display: flex;
     justify-content: flex-end;
     color: black;
+    font-size: 30px;
+    line-height: 0.3;
+}
+.txt-img .fa-heart:hover {
+    background-color: #9356DC;
 }
 
 /*footer*/
