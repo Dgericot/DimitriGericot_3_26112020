@@ -91,8 +91,7 @@ button.encadrement:not(:last-child) {
     margin-bottom: 20px;
 }
 .fonctionnement button:hover {
-    background-color:#9356DC ;
-    opacity:0.2;
+    background-color:#f5edff ;
 }
 .encadrement {
     display: flex;
@@ -118,16 +117,15 @@ button.encadrement:not(:last-child) {
     padding: 0px 20px;
     font-size: 18px;
 }
-.fonctionnement .fas:hover{
+.encadrement:hover .fas{
     color: #9356DC;
-    opacity: 1;
 }
 
 /*section restaurants*/
 
 .text-nouveau-box {
     position: absolute;
-    left: 80%;
+    right: 20px;
     padding: 10px 30px;
     background: #99E2D0;
     color: #008766;
@@ -219,9 +217,22 @@ footer {
 }
 
 /*************************************/
+/*Tablette*/
+@media screen and (min-width:800px) and (max-width: 1200px) {
+    #cartes article {
+    width:40%;
+    margin: 20px;
+    }
+    #cartes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 /*Desktop*/
-/*@media screen and (min-width:1200px)*/
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1201px) {
 
 #page {
     margin: auto;
