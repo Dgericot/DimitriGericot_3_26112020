@@ -4,12 +4,23 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.logo-menu {
-  font-family: "Shrikhand", cursive;
+header {
   display: flex;
   justify-content: center;
+}
+
+header a {
+  position: absolute;
+  right: 100%;
+  color: black;
+}
+
+.logo-menu {
+  font-family: "Shrikhand", cursive;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
   margin: 0;
-  font-size: 2.5em;
 }
 
 .fa-arrow-left {
@@ -41,7 +52,7 @@ body {
 .h1-menu {
   font-family: "Shrikhand", cursive;
   margin: 50px 20px 35px;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .fa-heart {
