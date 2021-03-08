@@ -52,7 +52,7 @@ input::placeholder {
     background-color: #f6f6f6;
     padding: 20px 40px 40px;
 }
-.explore-restaurants h1 {
+.explore-restaurants h2 {
     text-align: center;
 }
 .explore-restaurants p {
@@ -102,7 +102,7 @@ button.encadrement:not(:last-child) {
     font-weight: bold;
     font-size: 1.2em;
 }
-#chiffre {
+.chiffre {
     display: block;
     border-radius: 50%;
     background-color: #9356DC;
@@ -134,10 +134,11 @@ button.encadrement:not(:last-child) {
 article a {
     text-decoration: none;
 }
-article span {
+article h2 {
     color: black;
     font-weight: bold;
     font-size: 1.2em;
+    margin: 0;
 }
 .txt-img p {
     color: black;
