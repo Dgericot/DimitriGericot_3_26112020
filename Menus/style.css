@@ -48,7 +48,7 @@ header a {
 }
 
 /*section menu*/
-.h1-menu {
+.h2-menu {
   font-family: "Shrikhand", cursive;
   margin: 50px 20px 35px;
   font-size: 1.8em;
@@ -98,18 +98,27 @@ header a {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px 20px 20px 20px;
   margin: 20px;
-  line-height: 0.4;
+  line-height: 0.6;
   font-size: 1.3em;
 }
 
-.plats h3, p {
+.plats h3 {
+  margin: 25px 0px 0px 15px;
+}
+
+.plats p {
   margin-left: 15px;
 }
 
+.align-prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
 .prix {
-  text-align: end;
   font-weight: bold;
-  padding: 5px 15px;
 }
 
 /*bouton order*/
