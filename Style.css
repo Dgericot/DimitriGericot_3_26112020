@@ -3,10 +3,55 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Shrikhand', cursive;
 */
+.loader {
+    /*Création loader*/
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    
+    animation: spin 3s linear infinite;
 
-#page {
+    /*Placement du loader*/
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    right: 0; left: 0;
+}
+    /*Animation loader*/
+    @keyframes spin {
+        0% {
+            opacity:1;
+            transform: rotate(0deg) scale(1);
+            border-right: 10px solid #99E2D0;
+            border-left: 10px solid #99E2D0;
+        }
+        50% {
+            transform: rotate(360deg) scale(1.5);
+            border-top: 10px solid #9356DC;
+            border-bottom: 10px solid #9356DC;
+        }
+        75%{
+            border-right: 10px solid #99E2D0;
+            border-left: 10px solid #99E2D0;
+        }
+        100%{
+            transform: rotate(720deg) scale(1);
+            border-top: 10px solid #FF79DA;
+            border-bottom: 10px solid #FF79DA;
+            opacity:1;
+            z-index: -1;
+            /*visibility: hidden;*/
+        }
+    }
+.page {
     padding: 0;
     margin: 0;
+    position: relative;
+    z-index: 1;
 }
 
 /*header*/
@@ -91,7 +136,8 @@ button.encadrement:not(:last-child) {
     margin-bottom: 20px;
 }
 .fonctionnement button:hover {
-    background-color:#f5edff ;
+    background-color:#f5edff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 .encadrement {
     display: flex;
@@ -216,6 +262,9 @@ footer {
 .footer-box .fas {
     padding-right: 10px;
 }
+.couverts .fas {
+    margin-right: 6px;
+}
 
 /*************************************/
 /*Tablette*/
@@ -235,7 +284,7 @@ footer {
 /*Desktop*/
 @media screen and (min-width:1201px) {
 
-#page {
+.page {
     margin: auto;
     padding: 0 2em;
 }
