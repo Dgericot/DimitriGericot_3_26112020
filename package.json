@@ -4,7 +4,8 @@
   "description": "Projet3-OC",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./Menus/style.css"
+    "sass-menus": "sass --watch ./sass/main.scss:./Menus/style.css" ,
+    "sass-accueil": "sass --watch ./accueil.scss:./Style.css"
   },
   "author": "Dimitri",
   "license": "ISC"
