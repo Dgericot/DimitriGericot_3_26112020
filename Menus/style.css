@@ -64,6 +64,32 @@ header a {
   font-size: 40px;
 }
 
+.rempli {
+  opacity: 0;
+}
+.rempli:hover {
+  color: #9356DC;
+  animation: remplissage 1500ms linear;
+}
+
+.vide:hover {
+  color: transparent;
+}
+
+@keyframes remplissage {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu {
   border-radius: 40px 40px 0px 0px;
   background-color: #f6f6f6;
@@ -91,7 +117,7 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: decallage-menu 3s;
+  animation: decallage-menu 3000ms;
 }
 
 @keyframes decallage-menu {
@@ -166,6 +192,9 @@ header a {
 
 .plats p {
   margin-left: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
 }
 
 .align-prix {
