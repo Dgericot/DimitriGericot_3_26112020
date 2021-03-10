@@ -116,7 +116,50 @@ header a {
   line-height: 0.6;
   font-size: 1.3em;
 }
+.plats:hover .icone-coche {
+  display: initial;
+  animation: icone-slide 1500ms;
+}
+.plats:hover .virgule {
+  animation: icone-rotation 1000ms;
+}
+.plats .icone-coche {
+  color: #f6f6f6;
+  background: #99E2D0;
+  float: right;
+  text-align: center;
+  padding: 36px;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 1.6rem;
+  display: none;
+}
 
+@keyframes icone-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes icone-rotation {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
 .plats h3 {
   margin: 25px 0px 0px 15px;
 }
