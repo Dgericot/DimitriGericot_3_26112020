@@ -6,6 +6,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+  padding: 1rem;
 }
 
 header a {
@@ -19,7 +20,7 @@ header a {
   display: inline-block;
   position: relative;
   justify-content: center;
-  margin: 0;
+  margin: 5px 0px;
 }
 
 .fa-arrow-left {
@@ -34,7 +35,7 @@ header a {
   padding-bottom: 56.25%;
   overflow: hidden;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .proj-img {
     padding-bottom: 26.25%;
   }
@@ -57,39 +58,79 @@ header a {
   align-items: center;
 }
 
-.fa-heart {
+/*Boutons coeurs*/
+.coeurs {
   display: flex;
-  justify-content: flex-end;
-  line-height: 0;
-  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  font-size: 25px;
 }
-
-.rempli {
+.coeurs:hover::before {
+  opacity: 1;
+}
+.coeurs::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  transition: 450ms;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #9356DC, #ff79DA);
+}
+.coeurs .menu__like {
+  position: absolute;
+  transition-duration: 250ms;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: lighten;
+  background-color: #f6f6f6;
+}
+.coeurs .coeurs:hover .menu__like--vide {
   opacity: 0;
 }
-.rempli:hover {
-  color: #9356DC;
-  animation: remplissage 1500ms linear;
-}
 
-.vide:hover {
-  color: transparent;
+/*.fa-heart {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 0;
+    font-size: 40px;
 }
-
-@keyframes remplissage {
-  0% {
+.rempli {
     opacity: 0;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  75% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+    &:hover {
+        color: #9356DC;
+        animation: remplissage 1500ms linear;
+    }
 }
+.vide:hover {
+    color: transparent;
+}
+@keyframes remplissage {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    75% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}*/
 .menu {
   border-radius: 40px 40px 0px 0px;
   background-color: #f6f6f6;
@@ -98,6 +139,12 @@ header a {
   position: relative;
   margin-top: -35px;
   padding-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    max-width: 800px;
+    margin: auto;
+  }
 }
 
 .categorie {
@@ -117,7 +164,22 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: decallage-menu 3000ms;
+  /*animation: decallage-menu 3000ms;*/
+}
+
+.intitules__entrees {
+  animation-name: decallage-menu;
+  animation-duration: 2s;
+}
+
+.intitules__plats {
+  animation-name: decallage-menu;
+  animation-duration: 4s;
+}
+
+.intitules__desserts {
+  animation-name: decallage-menu;
+  animation-duration: 6s;
 }
 
 @keyframes decallage-menu {
@@ -141,6 +203,7 @@ header a {
   margin: 20px;
   line-height: 0.6;
   font-size: 1.3em;
+  cursor: pointer;
 }
 .plats:hover .icone-coche {
   display: initial;
@@ -219,6 +282,11 @@ header a {
   display: block;
   margin: auto;
   margin-top: 40px;
+  cursor: pointer;
+}
+.order:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
 }
 
 .order span {
