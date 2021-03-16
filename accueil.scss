@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Shrikhand', cursive;
 */
-.loader-container {
+/*.loader-container {
     position: fixed;
     z-index: 10;
     top: 0;
@@ -15,7 +15,7 @@
     display: flex;
     background: #f6f6f6;
     animation: fadeout 400ms 3s forwards;
-}
+}*/
 
 @keyframes fadeout {
     0% {
@@ -32,8 +32,8 @@
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spin 3s linear infinite;
-    margin: auto;
+    /*animation: spin 3s linear infinite;
+    margin: auto;*/
 }
     /*Animation loader*/
     @keyframes spin {
@@ -123,8 +123,13 @@ input::placeholder {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     height: 50px;
     padding: 0 30px;
+    cursor: pointer;
     display: block;
     margin: auto;
+    &:hover {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0.8;
+    }
 }
 .exploration span {
     color: white;
@@ -244,26 +249,70 @@ article {
 .txt-img {
     margin: 20px 25px 15px 15px;
 }
+/*Boutons coeurs*/
 .coeurs {
-    border: 0px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
     cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    
+    &:hover::before {
+        opacity: 1;
+    }
+    &::before {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        transition: 450ms;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg,#9356DC,#ff79DA);
+
+    }
+.menu__like {
+    position: absolute;
+    transition-duration: 250ms;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: lighten;
+    background-color: #f6f6f6;
 }
-.fa-heart {
+.coeurs:hover {
+    .menu__like {
+        &--vide {
+            opacity: 0;
+        }
+    }
+}
+}
+/*.fa-heart {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     color: black;
     font-size: 30px;
     line-height: 0;
-}
-.rempli {
+}*/
+/*.rempli {
     opacity: 0;
     &:hover {
         color: #9356DC;
         animation: remplissage 1500ms linear forwards;
     }
-}
-.vide:hover {
+}*/
+/*.vide:hover {
     color: transparent;
 }
 @keyframes remplissage {
@@ -279,7 +328,7 @@ article {
     100% {
         opacity: 1;
     }
-}
+}*/
 /*footer*/
 footer {
     background-color: #353535;
