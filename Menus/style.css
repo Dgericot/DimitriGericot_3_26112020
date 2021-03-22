@@ -6,13 +6,17 @@ body {
 header {
   display: flex;
   justify-content: center;
-  padding: 1rem;
-  box-shadow: inset 0px -8px 7px -8px grey;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 0.75rem 1rem;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
 }
 
 header a {
   position: absolute;
-  right: 160%;
+  left: 0;
+  margin-left: 0;
   color: black;
 }
 
@@ -21,7 +25,7 @@ header a {
   display: inline-block;
   position: relative;
   justify-content: center;
-  margin: 5px 0px;
+  margin: 0;
 }
 
 .fa-arrow-left {
@@ -33,6 +37,7 @@ header a {
   position: relative;
   width: 100%;
   height: 0;
+  z-index: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
 }
@@ -52,24 +57,21 @@ header a {
 /*section menu*/
 .h2-menu {
   font-family: "Shrikhand", cursive;
-  margin: 50px 20px 35px;
+  margin: 30px 0px 30px 20px;
   font-size: 1.8em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /*Boutons coeurs*/
 .coeurs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: transparent;
+  background: black;
   border: none;
-  padding: 0;
+  margin-right: 60px;
   cursor: pointer;
   position: relative;
   font-size: 25px;
+  width: 25px;
+  height: 25px;
 }
 .coeurs:hover::before {
   opacity: 1;
@@ -83,9 +85,10 @@ header a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #9356DC, #ff79DA);
+  background: linear-gradient(#9356DC, #ff79DA);
 }
-.coeurs .menu__like {
+
+.menu__like {
   position: absolute;
   transition-duration: 250ms;
   top: 0;
@@ -98,40 +101,17 @@ header a {
   mix-blend-mode: lighten;
   background-color: #f6f6f6;
 }
-.coeurs .coeurs:hover .menu__like--vide {
+
+.coeurs:hover .menu__like--vide {
   opacity: 0;
 }
 
-/*.fa-heart {
-    display: flex;
-    justify-content: flex-end;
-    line-height: 0;
-    font-size: 40px;
+.align-coeurs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.rempli {
-    opacity: 0;
-    &:hover {
-        color: #9356DC;
-        animation: remplissage 1500ms linear;
-    }
-}
-.vide:hover {
-    color: transparent;
-}
-@keyframes remplissage {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.4;
-    }
-    75% {
-        opacity: 0.6;
-    }
-    100% {
-        opacity: 1;
-    }
-}*/
+
 .menu {
   border-radius: 40px 40px 0px 0px;
   background-color: #f6f6f6;
@@ -145,6 +125,8 @@ header a {
   .menu {
     max-width: 800px;
     margin: auto;
+    margin-top: -35px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -165,7 +147,6 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*animation: decallage-menu 3000ms;*/
 }
 
 .intitules__entrees {
@@ -219,7 +200,7 @@ header a {
   background: #99E2D0;
   float: right;
   text-align: center;
-  padding: 32px;
+  padding: 33px;
   border-radius: 0px 20px 20px 0px;
   font-size: 1.6rem;
   display: none;
@@ -252,16 +233,19 @@ header a {
   }
 }
 .plats h3 {
-  margin: 25px 0px 0px 15px;
-}
-
-.plats p {
-  margin: 0px 0px 0px 15px;
+  margin: 15px 0px 0px 15px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  line-height: 2;
-  padding-bottom: 5px;
+  line-height: 1.2;
+}
+
+.plats p {
+  margin: 0px 0px 15px 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.6;
 }
 
 .align-prix {
@@ -273,27 +257,28 @@ header a {
 
 .prix {
   font-weight: bold;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 /*bouton order*/
 .order {
   border: none;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom, rgba(255, 121, 218, 0.95), rgba(147, 86, 220, 0.95));
   border-radius: 40px 40px 40px 40px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   height: 70px;
   padding: 0 70px;
   display: block;
   margin: auto;
   margin-top: 40px;
   cursor: pointer;
+  background-color: #464444;
+  transition-duration: 0.2s;
 }
 .order:hover {
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
-  opacity: 0.8;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  background-color: white;
 }
-
 .order span {
   color: white;
   font-size: 1.5em;
