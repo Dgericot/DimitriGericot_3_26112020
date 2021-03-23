@@ -83,9 +83,12 @@ button {
     font-family: 'Roboto', sans-serif;
 }
 /*section container-section1*/
-.recherche {
+form {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.recherche {
     background-color: #eaeaea;
     padding: 15px;
 }
@@ -93,13 +96,12 @@ input {
     border: transparent ;
     text-align: center;
     background-color: #eaeaea;
-    display: flex;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 input::placeholder {
     font-family: 'Roboto', sans-serif;
-    color: black;
     font-weight: bold;
+    color: black;
 }
 
 /*Les titres fonctionnement et restaurants*/
@@ -114,9 +116,11 @@ input::placeholder {
 }
 .explore-restaurants h2 {
     text-align: center;
+    font-size: 1.7em;
 }
 .explore-restaurants p {
     text-align: center;
+    font-size: 1.2em;
 }
 .exploration {
     border: none;
@@ -137,7 +141,7 @@ input::placeholder {
     & span {
         color: rgb(255, 255, 255);
         font-weight: 500;
-        font-size: 1.2em;  
+        font-size: 1.4em;  
     }
     
 }
@@ -169,8 +173,8 @@ button.encadrement:not(:last-child) {
     cursor: pointer;
 }
 .encadrement span {
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: 500;
+    font-size: 1.4em;
 }
 .chiffre {
     display: block;
