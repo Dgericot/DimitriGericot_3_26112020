@@ -79,6 +79,10 @@ body {
   margin: 0;
 }
 
+button {
+  font-family: "Roboto", sans-serif;
+}
+
 /*section container-section1*/
 .recherche {
   display: flex;
@@ -96,6 +100,7 @@ input {
 }
 
 input::placeholder {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-weight: bold;
 }
@@ -138,7 +143,7 @@ input::placeholder {
 }
 .exploration span {
   color: white;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.2em;
 }
 
@@ -381,8 +386,21 @@ footer {
 }
 
 /*section fonctionnement*/
+@media screen and (min-width: 800px) {
+  .fonctionnement {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .fonctionnement button {
+    padding: 25px;
+  }
+}
+
 @media screen and (min-width: 1201px) {
   .fonctionnement {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;

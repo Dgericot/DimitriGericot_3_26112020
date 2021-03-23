@@ -79,7 +79,9 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
-
+button {
+    font-family: 'Roboto', sans-serif;
+}
 /*section container-section1*/
 .recherche {
     display: flex;
@@ -95,6 +97,7 @@ input {
     font-size: 1em;
 }
 input::placeholder {
+    font-family: 'Roboto', sans-serif;
     color: black;
     font-weight: bold;
 }
@@ -133,7 +136,7 @@ input::placeholder {
     }
     & span {
         color: rgb(255, 255, 255);
-        font-weight: bold;
+        font-weight: 500;
         font-size: 1.2em;  
     }
     
@@ -358,7 +361,18 @@ footer {
 
 /*section fonctionnement*/
 .fonctionnement {
+    @media screen and (min-width:800px){
+    display: block; 
+    }
+}
+.fonctionnement button {
+    @media screen and (min-width:800px) {
+    padding: 25px;
+    }
+}
+.fonctionnement {
     @media screen and (min-width:1201px) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
