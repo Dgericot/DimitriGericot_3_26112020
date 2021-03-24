@@ -1,0 +1,26 @@
+/*bouton order*/
+
+.order {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    background-image: linear-gradient(to bottom,rgba(255,121,218,95%),rgba(147,86,220,95%));
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: $shadow-bouton-gradient;
+    height: 70px;
+    padding: 0 70px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    background-color:#464444;
+    transition-duration: 0.20s;
+    &:hover {
+        box-shadow: $shadow-bouton-gradient-hover;
+        background-color: rgb(255, 255, 255);
+    }
+    & span {
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+}

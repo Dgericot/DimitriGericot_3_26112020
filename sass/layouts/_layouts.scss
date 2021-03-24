@@ -1,20 +1,21 @@
 
 /*Accueil*/
+
 /*header*/
+header {
+    padding: 0.75rem 1rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: $shadow-header;
+}
 .logo-menu {
     font-family: 'Shrikhand', cursive;
     display: flex;
     justify-content: center;
-    margin: 5px 0px;
-}
-
-/*Accueil et menus*/
-body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-/*footer mobile et tablette*/
+/*footer*/
 footer {
     background-color: #353535;
     padding: 10px;
@@ -37,22 +38,4 @@ footer {
 }
 .couverts .fas {
     margin-right: 6px;
-}
-
-/*footer desktop*/
-.h1-footer {
-    @media screen and (min-width:1201px) {
-    text-align: center;
-    }
-}
-.footer-box p {
-    @media screen and (min-width:1201px) {
-    padding: 10px;
-    }
-}
-.footer-box { 
-    @media screen and (min-width:1201px) {
-    display: flex;
-    justify-content: center;
-    }
 }
