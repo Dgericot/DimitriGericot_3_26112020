@@ -111,7 +111,7 @@ footer {
   cursor: pointer;
   position: relative;
   font-size: 25px;
-  width: 25px;
+  width: 30px;
   height: 25px;
 }
 .coeurs:hover::before {
@@ -141,6 +141,7 @@ footer {
   align-items: center;
   mix-blend-mode: lighten;
   background-color: white;
+  color: black;
 }
 
 .coeurs:hover .menu__like--vide {
@@ -186,19 +187,19 @@ footer {
 }
 
 .fonctionnement button {
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   height: 80px;
   border: none;
 }
+.fonctionnement button:hover {
+  transition-duration: 250ms;
+  background-color: #f5edff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
 
 button.encadrement:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.fonctionnement button:hover {
-  background-color: #f5edff;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .encadrement {
@@ -207,7 +208,6 @@ button.encadrement:not(:last-child) {
   background-color: #f6f6f6;
   cursor: pointer;
 }
-
 .encadrement span {
   font-weight: 500;
   font-size: 1.4em;
@@ -254,6 +254,9 @@ form {
   justify-content: center;
   align-items: center;
 }
+form .fas {
+  font-size: larger;
+}
 
 .recherche {
   background-color: #eaeaea;
@@ -265,12 +268,14 @@ input {
   text-align: center;
   background-color: #eaeaea;
   font-size: 1.1em;
+  width: 156px;
 }
 
 input::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: black;
+  opacity: 1;
 }
 
 /*Les titres fonctionnement et restaurants*/
@@ -395,18 +400,6 @@ article {
 }
 
 /*section fonctionnement*/
-@media screen and (min-width: 800px) {
-  .fonctionnement {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .fonctionnement button {
-    padding: 25px;
-  }
-}
-
 @media screen and (min-width: 1201px) {
   .fonctionnement {
     display: flex;
@@ -418,7 +411,7 @@ article {
 
 @media screen and (min-width: 1201px) {
   .fonctionnement button {
-    padding: 25px;
+    padding: 12px;
   }
 }
 

@@ -65,7 +65,7 @@
     cursor: pointer;
     position: relative;
     font-size: 25px;
-    width: 25px;
+    width: 30px;
     height: 25px;
 
     &:hover::before {
@@ -95,6 +95,7 @@
         align-items: center;
         mix-blend-mode: lighten;
         background-color: white;
+        color: black;
     }
     .coeurs:hover {
         .menu__like {

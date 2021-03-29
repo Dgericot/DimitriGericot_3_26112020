@@ -18,6 +18,9 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    & .fas {
+        font-size: larger;
+    }
 }
 .recherche {
     background-color: #eaeaea;
@@ -28,12 +31,15 @@ input {
     text-align: center;
     background-color: #eaeaea;
     font-size: 1.1em;
+    width: 156px;
 }
 input::placeholder {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: black;
+    opacity: 1;
 }
+
 
 /*Les titres fonctionnement et restaurants*/
 .titres {
@@ -145,16 +151,7 @@ article {
 }
 
 /*section fonctionnement*/
-.fonctionnement {
-    @media screen and (min-width:800px){
-    display: block; 
-    }
-}
-.fonctionnement button {
-    @media screen and (min-width:800px) {
-    padding: 25px;
-    }
-}
+
 .fonctionnement {
     @media screen and (min-width:1201px) {
     display: flex;
@@ -165,7 +162,7 @@ article {
 }
 .fonctionnement button {
     @media screen and (min-width:1201px) {
-    padding: 25px;
+    padding: 12px;
     }
 }
 
