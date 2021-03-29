@@ -86,7 +86,7 @@ footer {
   cursor: pointer;
   position: relative;
   font-size: 25px;
-  width: 25px;
+  width: 30px;
   height: 25px;
 }
 .coeurs:hover::before {
@@ -116,6 +116,7 @@ footer {
   align-items: center;
   mix-blend-mode: lighten;
   background-color: #f6f6f6;
+  color: black;
 }
 
 .coeurs:hover .menu__like--vide {
@@ -168,14 +169,19 @@ footer {
 .plats {
   background-color: white;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
   margin: 20px;
-  /*line-height: 0.3;*/
+  /*width: 380px;*/
+  display: flex;
   overflow: hidden;
   font-size: 1.3em;
   cursor: pointer;
 }
+.plats:hover .contenu {
+  width: 90%;
+}
 .plats:hover .icone-coche {
+  width: 10%;
   display: initial;
   animation: icone-slide 350ms;
 }
@@ -185,10 +191,11 @@ footer {
 .plats .icone-coche {
   color: #f6f6f6;
   background: #99E2D0;
-  float: right;
+  /*float: right;*/
   text-align: center;
-  padding: 31px;
-  border-radius: 0px 18px 18px 0px;
+  transition: width 0.2s;
+  width: 0;
+  padding: 20px;
   font-size: 1.7rem;
   display: none;
 }
@@ -219,31 +226,50 @@ footer {
     transform: rotate(0deg);
   }
 }
-.plats h3 {
-  margin: 15px 0px 0px 15px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  line-height: 1.3;
+.contenu {
+  padding: 15px;
+  width: 100%;
+  transition: width 0.2s;
 }
-
-.plats p {
+.contenu h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  line-height: 1.65;
   margin: 0;
+}
+.contenu p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.5;
   font-weight: 400;
+  margin: 0;
 }
 
+/*.plats h3 {
+    margin: 15px 0px 0px 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.3; 
+}*/
+/*.plats p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.65;
+    margin: 0;
+    font-weight: 400;
+}*/
 .align-prix {
-  margin: 0px 30px 15px 15px;
+  /*margin: 0px 30px 15px 15px;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .prix {
+  margin-right: 25px;
   font-weight: bold;
 }
 
