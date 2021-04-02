@@ -12,16 +12,15 @@
     margin: auto;
     background-color:#464444;
     transition-duration: 0.20s;
-    &:hover {
-        box-shadow: $shadow-bouton-gradient-hover;
-        background-color: rgb(255, 255, 255);
-    }
-    & span {
-        color: rgb(255, 255, 255);
-        font-weight: 500;
-        font-size: 1.4em;  
-    }
-    
+        &:hover {
+            box-shadow: $shadow-bouton-gradient-hover;
+            background-color: rgb(255, 255, 255);
+        }
+        & span {
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            font-size: 1.4em;  
+        }  
 }
 
 /*Boutons fonctionnement*/
@@ -37,11 +36,11 @@
     box-shadow: $shadow-elements;
     height: 80px;
     border: none;
-    &:hover {
-        transition-duration: 250ms;
-        background-color:#f5edff;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
-    }
+        &:hover {
+            transition-duration: 250ms;
+            background-color:#f5edff;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+        }
 }
 button.encadrement:not(:last-child) {
     margin-bottom: 20px;
@@ -52,10 +51,10 @@ button.encadrement:not(:last-child) {
     align-items: center;
     background-color: $colour-fond;
     cursor: pointer;
-    & span {
-        font-weight: 500;
-        font-size: 1.4em;
-    }
+        & span {
+            font-weight: 500;
+            font-size: 1.4em;
+        }
 }
 .chiffre {
     display: block;
