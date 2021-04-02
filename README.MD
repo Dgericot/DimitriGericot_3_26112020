@@ -35,8 +35,8 @@ localisation pour trouver des restaurants proches d’un certain lieu.<br/>
 ● Une section contenant les 4 menus sous forme cartes. Au clic sur la carte,
 l’utilisateur est redirigé vers la page du menu.<br/>
 Pages de menu (x4):<br/>
-● 4 pages contenant chacune le menu d’un restaurant.
-Footer<br/>
+● 4 pages contenant chacune le menu d’un restaurant.<br/>
+Footer:<br/>
 ● Le footer est identique sur toutes les pages.<br/>
 ● Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
 Header<br/>
