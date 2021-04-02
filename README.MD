@@ -9,10 +9,10 @@ restaurants car leur menu est préparé à l’avance. Plus de perte de temps à
 !
 
 ## Identité graphique
-Polices <br/>
+Polices: <br/>
 Logo et titres: Shrikhand<br/>
 Texte: Roboto<br/>
-Couleurs<br/>
+Couleurs:<br/>
 Primaire: #9356DC<br/>
 Secondaire: #FF79DA<br/>
 Tertiaire: #99E2D0<br/>
@@ -28,13 +28,13 @@ leur mise en page est libre.<br/>
 Chrome et Firefox.
 
 ## Contenu des pages
-Page d’accueil (x1)<br/>
+Page d’accueil (x1):<br/>
 ● Affichage de la localisation des restaurants. À terme il sera possible de choisir sa
-localisation pour trouver des restaurants proches d’un certain lieu.
+localisation pour trouver des restaurants proches d’un certain lieu.<br/>
 ● Une courte présentation de l’entreprise.<br/>
 ● Une section contenant les 4 menus sous forme cartes. Au clic sur la carte,
 l’utilisateur est redirigé vers la page du menu.<br/>
-Pages de menu (x4)<br/>
+Pages de menu (x4):<br/>
 ● 4 pages contenant chacune le menu d’un restaurant.
 Footer<br/>
 ● Le footer est identique sur toutes les pages.<br/>
@@ -55,14 +55,14 @@ L’ombre portée devra également être plus visible.<br/>
 bouton "J’aime" en forme de coeur est présent sur la maquette. Au clic, il devra se
 remplir progressivement. Pour cette première version, l’effet peut être apparaître au
 survol au lieu du clic.<br/>
-Page d’accueil<br/>
+Page d’accueil:<br/>
 ● Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur
 cette maquette, nous souhaitons en avoir un aperçu. Il devra apparaître pendant 1 à
 3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et
 utiliser les animations CSS (pas de librairie). Le design de ce loader n’est pas défini,
 toute proposition est donc la bienvenue tant qu’elle est cohérente avec la charte
 graphique du site.<br/>
-Pages de menu<br/>
+Pages de menu:<br/>
 ● À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger
 décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe
 “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.<br/>
