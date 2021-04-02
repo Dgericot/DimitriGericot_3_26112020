@@ -14,13 +14,13 @@
     cursor: pointer;
     background-color:#464444;
     transition-duration: 0.20s;
-    &:hover {
-        box-shadow: $shadow-bouton-gradient-hover;
-        background-color: rgb(255, 255, 255);
-    }
-    & span {
-        color: rgb(255, 255, 255);
-        font-size: 1.5em;
-        font-weight: 500;
-    }
+        &:hover {
+            box-shadow: $shadow-bouton-gradient-hover;
+            background-color: rgb(255, 255, 255);
+        }
+        & span {
+            color: rgb(255, 255, 255);
+            font-size: 1.5em;
+            font-weight: 500;
+        }
 }

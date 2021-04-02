@@ -11,8 +11,8 @@
     z-index: 0;
     padding-bottom: 56.25%;
     overflow: hidden;
-@media screen and (min-width:1024px){
-    padding-bottom: 26.25%;
+    @media screen and (min-width:1024px){
+        padding-bottom: 26.25%;
     }
 }
 .proj-img img {
@@ -37,10 +37,10 @@
     margin-top: -35px;
     padding-bottom: 100px;
     @media screen and (min-width:1024px) {
-    max-width: 800px;
-    margin: auto;
-    margin-top: -35px;
-    box-shadow: 0 0 16px rgba(0 0 0 /25%);
+        max-width: 800px;
+        margin: auto;
+        margin-top: -35px;
+        box-shadow: 0 0 16px rgba(0 0 0 /25%);
     }
 }
 /*Surlignement des intitulés*/
